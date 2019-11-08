@@ -1,6 +1,6 @@
 #!/bin/bash
 
-flink run /opt/flink/lib/job.jar \
+flink run /workdir/flink-kafka-consumer-complex-processing.jar \
     --kafka.in.topic "$KAFKA_INPUT_TOPIC" \
     --kafka.in.bootstrap.servers "$KAFKA_BOOTSTRAP_SERVERS" \
     --kafka.in.request.timeout.ms "15000" \
